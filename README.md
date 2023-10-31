@@ -23,23 +23,6 @@ df['NFLX'] = data.DataReader('NFLX', data_source='yahoo', start='1-1-2010')['Clo
 df.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -95,16 +78,12 @@ df.head()
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 O primeiro problema consiste em calcular o retorno e risco de uma carteira, usando uma base anual. Isso é feito pela função 'calcular_dados_carteira' que, dado um dataset de retornos n dimensional, calcula o retorno que é a média ponderada dos retornos de cada ativo. Sempre são considerados 252 dias úteis de negociação dos ativos.
 
 Depois, o risco é calculado utilizando a matriz de covariância entre os ativos ponderado pelos pesos. Note que o sharpe é apenas a medida de ganho por unidade de risco.
 
 Várias carteiras são geradas com pesos aleatórios e calculados os retorno, risco e sharpe.
-
 
 ```python
 """ Importa biblioteca necessária """
