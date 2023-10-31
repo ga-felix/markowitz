@@ -1,14 +1,5 @@
 ##### Teoria de Carteiras de Markowitz
-Universidade de São Paulo  
-Contabilidade para Computação  
-Prof. Dr. Francisco Carlos Barbosa do Santos  
-
-| Nome | Número USP | Email
-| ----------- | ----------- | -----------
-| Gabriel Felix de Souza Lopes | 11295682 | gafelix@usp.br
-| João Guilherme da Costa Seike | 9784634 | jgseike@usp.br
-| Daniel Feitosa dos Santos | 11270591 | 
-Este trabalho tem como objetivo calcular o retorno e risco de uma carteira e criar a fronteira eficiente através de simulações de várias carteiras possíveis.
+Este script tem como objetivo calcular o retorno e risco de uma carteira e criar a fronteira eficiente através de simulações de várias carteiras possíveis.
 
 Para começar, a carteira será composta pelas ações da Amazon, Google, Netflix e Microsoft, em 2010. A seguir, as bibliotecas são importadas e o dataset carregado.
 
@@ -22,7 +13,7 @@ from pandas_datareader import data
 
 
 ```python
-""" Cria dataset com ações da Amazon, Google, Netflix e Microsfot """
+""" Cria dataset com ações da Amazon, Google, Netflix e Microsoft """
 
 df = pd.DataFrame()
 df['AMZN'] = data.DataReader('AMZN', data_source='yahoo', start='1-1-2010')['Close']
