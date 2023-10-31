@@ -1,4 +1,4 @@
-##### Teoria de Carteiras de Markowitz
+# Teoria de Carteiras de Markowitz
 Este script tem como objetivo calcular o retorno e risco de uma carteira e criar a fronteira eficiente através de simulações de várias carteiras possíveis.
 
 Para começar, a carteira será composta pelas ações da Amazon, Google, Netflix e Microsoft, em 2010. A seguir, as bibliotecas são importadas e o dataset carregado.
@@ -131,10 +131,8 @@ plt.ylabel("Retorno")
 plt.show()
 ```
 
-
-    
-![png](marko_files/marko_6_0.png)
-    
+  
+![image](https://github.com/ga-felix/markowitz/assets/44716827/cc9e99f8-af6d-463a-a892-42d0abbd7851)
 
 
 E a melhor distribuição de pesos é...
